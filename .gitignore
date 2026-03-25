@@ -1,13 +1,20 @@
-# ignore extra safety even if something slips in
+# defense in depth (public repo)
 .ssh/
 .cache/
 .config/
 .local/
 .gnupg/
 .pki/
-.DS_Store
+.bash_history
+.gitconfig
+.lesshst
+
+# heavy runtime data
+**/wordpress-compose/data/
+**/data/
+
+# logs/temp
+*.log
 *.swp
 *~
-
-# docker compose data (heavy)
-**/wordpress-compose/data/
+.DS_Store
