@@ -1,0 +1,29 @@
+# Secrets / sensitive
+.ssh/
+.docker/
+.aws/
+.gnupg/
+.pki/
+*.key
+*.pem
+*.p12
+
+# OS / caches
+.cache/
+.local/share/
+.tmp/
+*.swp
+*~
+.DS_Store
+
+# Docker compose DB data (không commit)
+**/wordpress-compose/data/
+**/data/
+
+# Node/Python build junk (nếu có)
+node_modules/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
