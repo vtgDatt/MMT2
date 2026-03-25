@@ -1,29 +1,18 @@
-# Secrets / sensitive
+# secrets/caches (defense in depth)
 .ssh/
 .docker/
-.aws/
+.cache/
+.local/
+.config/
 .gnupg/
 .pki/
-*.key
-*.pem
-*.p12
 
-# OS / caches
-.cache/
-.local/share/
-.tmp/
-*.swp
-*~
-.DS_Store
-
-# Docker compose DB data (không commit)
+# docker compose database data (tránh commit data nặng)
 **/wordpress-compose/data/
 **/data/
 
-# Node/Python build junk (nếu có)
-node_modules/
-__pycache__/
-*.pyc
-
-# Logs
+# logs/temp
 *.log
+*.swp
+*~
+.DS_Store
