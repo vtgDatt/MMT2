@@ -1,18 +1,13 @@
-# secrets/caches (defense in depth)
+# ignore extra safety even if something slips in
 .ssh/
-.docker/
 .cache/
-.local/
 .config/
+.local/
 .gnupg/
 .pki/
-
-# docker compose database data (tránh commit data nặng)
-**/wordpress-compose/data/
-**/data/
-
-# logs/temp
-*.log
+.DS_Store
 *.swp
 *~
-.DS_Store
+
+# docker compose data (heavy)
+**/wordpress-compose/data/
